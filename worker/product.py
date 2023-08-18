@@ -209,7 +209,8 @@ async def product(link, type='detailed'):
 
     try:
         # uri = quote(link)
-        uri=link
+        # uri=link
+        uri = f"https://www.flipkart.com/{link}"
         print("Product initiated:", uri)
 
         webPageContents=None

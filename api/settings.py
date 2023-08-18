@@ -51,6 +51,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+EXTERNAL_MIDDLEWARE = ['middleware.getCheck.sanityCheck']
+
+MIDDLEWARE+=EXTERNAL_MIDDLEWARE
+
 ROOT_URLCONF = 'api.urls'
 
 TEMPLATES = [

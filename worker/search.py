@@ -200,8 +200,8 @@ def clean(link):
 
 # debugging tool
 #convert the result into json format and write it in a file
-result = asyncio.run(search("laptop", 'flipkart.com'))
-result = json.dumps(result)
-with open('result.json', 'w') as f:
-    f.write(result)
-print(result)
+# result = asyncio.run(search("laptop", 'flipkart.com'))
+# result = json.dumps(result)
+# with open('result.json', 'w') as f:
+#     f.write(result)
+# print(result)
