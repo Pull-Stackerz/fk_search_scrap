@@ -18,14 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from . import view
 
-def chcek(request):
-    
-    if (request.method not in ['GET']):
-        return {"error": "method not allowed", "status": 405}
+
 
 urlpatterns = [
-    path('search/', view.searchView, name='search'),
-    path('product/', view.productView, name='product'),
-    path('', view.baseView, name='base'),
-    path('admin/', admin.site.urls),
+    path("search/", view.searchView, name="search"),
+    path("product/", view.productView, name="product"),
+    # path("product/<slug:product_identifier>/", view.test, name="product"),
+    path("", view.baseView, name="base"),
+    path("admin/", admin.site.urls),
 ]
