@@ -9,7 +9,6 @@ from django.http import JsonResponse
 
 # imprt httpstatus for status code
 from http import HTTPStatus
-
 import json
 import re
 from urllib.parse import urlparse, parse_qs, urlencode
