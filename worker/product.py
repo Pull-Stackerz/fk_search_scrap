@@ -342,13 +342,13 @@ async def product(link, type='detailed'):
             "possible_solution": "Don't lose hope, contact the support",}
  
 
-def main():
-    result=asyncio.run(product('https://www.flipkart.com/entwino-f-1-gaming-mouse-wired-compute-optical/p/itma5e4346710327?pid=ACCG7TYKWZ457HJF&lid=LSTACCG7TYKWZ457HJFB7IZTZ&marketplace=FLIPKART&q=gamingMouse&store=6bo%2Fai3%2F2ay&srno=s_1_1&otracker=search&fm=organic&iid=8677a6f2-10c0-4059-a48f-99d65c2836f2.ACCG7TYKWZ457HJF.SEARCH&ppt=sp&ppn=sp&ssid=eg8h9ncprk0000001692276151289&qH=80cf3858d5cf3c14'))
+# def main():
+#     result=asyncio.run(product('https://www.flipkart.com/entwino-f-1-gaming-mouse-wired-compute-optical/p/itma5e4346710327?pid=ACCG7TYKWZ457HJF&lid=LSTACCG7TYKWZ457HJFB7IZTZ&marketplace=FLIPKART&q=gamingMouse&store=6bo%2Fai3%2F2ay&srno=s_1_1&otracker=search&fm=organic&iid=8677a6f2-10c0-4059-a48f-99d65c2836f2.ACCG7TYKWZ457HJF.SEARCH&ppt=sp&ppn=sp&ssid=eg8h9ncprk0000001692276151289&qH=80cf3858d5cf3c14'))
 
-    result=json.dumps(result)
+#     result=json.dumps(result)
 
-    with open('product.json', 'w') as f:
-        f.write(result)
-    # print(result)
+#     with open('product.json', 'w') as f:
+#         f.write(result)
+#     # print(result)
 
-main()
+# main()
